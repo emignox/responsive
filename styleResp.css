@@ -1,0 +1,53 @@
+body {
+    transition: background-color 0.5s;
+}
+
+@media (max-width: 299px) {
+    body {
+        background-color: red;
+    }
+}
+
+@media (min-width: 301px) and (max-width: 768px) {
+    body {
+        background-color: green;
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        background-color: blue;
+    }
+}
+
+
+
+@media (max-width: 300px) {
+    #small, #medium, #large {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 301px) and (max-width: 768px) {
+    #small {
+        width: 66.66%;
+    }
+
+    #medium {
+        width: 33.33%;
+    }
+
+    #large {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    #small, #medium, #large {
+        /* I 3 div sono affiancati su schermi grandi */
+        width: 33.33%;
+        margin-bottom: 0;
+        display: inline-block;
+    }
+}
