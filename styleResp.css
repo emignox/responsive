@@ -1,22 +1,47 @@
 body {
     transition: background-color 0.5s;
+    font-size: small;
 }
 
 @media (max-width: 299px) {
     body {
         background-color: red;
+        font-size: 10px;
+    }
+    #medium{
+        font-size: 20px;
+    }
+    #large{
+        font-size: 25px;
     }
 }
 
 @media (min-width: 301px) and (max-width: 768px) {
     body {
         background-color: green;
+        font-size: 20px;
+    }
+    #small{
+        font-size: 10px;
+
+    }
+    #large{
+        font-size: 30px;
     }
 }
 
 @media (min-width: 769px) {
-    body {
+    body  {
+        display: flex;
         background-color: blue;
+        font-size: 30px;
+        
+    }
+    #small{
+        font-size: 10px;
+    }
+    #medium{
+        font-size: 20px;
     }
 }
 
@@ -45,7 +70,6 @@ body {
 
 @media (min-width: 769px) {
     #small, #medium, #large {
-        /* I 3 div sono affiancati su schermi grandi */
         width: 33.33%;
         margin-bottom: 0;
         display: inline-block;
